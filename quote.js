@@ -10,7 +10,7 @@ async function getQuote() {
     const data = await res.json();
     quoteElement.textContent = `"${data.content}" — ${data.author}`;
   } catch (err) {
-    quoteElement.textContent = "Could not load quote.";
+    quoteElement.textContent = "Couldn't load quote.";
   }
 }
 
