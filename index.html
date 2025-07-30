@@ -33,7 +33,7 @@
     <section>
       <h2>Slideshow</h2>
       <div id="slideshow">
-        <img id="slide" src="pingpongcomp.jpg" alt="Slideshow Image" width="250" hieght="300" />
+        <img id="slide" src="pingpongcomp.jpg" alt="Slideshow Image" width="400" height="500" />
       </div>
     </section>
   </main>
@@ -44,6 +44,14 @@
 
   <script src="quote.js"></script>
   <script src="slideshow.js"></script>
+
+  <script>
+    document.querySelector('.theme-toggle').onclick = () => {
+      document.body.classList.toggle('light-mode');
+    };
+  </script>
+</body>
+
 
 </body>
 </html>

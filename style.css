@@ -4,13 +4,15 @@
     --text-primary: #f5f5f5;
     --color-primary: #b00020; /* red */
     --color-accent: #ffd700;  /* gold */
+    --color-highlight: #4caf50;
+    --color-muted: #888888;
     --shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
 }
 
 body {
     font-family: 'Georgia', serif;
     background-color: var(--bg-primary);
-    background-image: url('dark-bg-texture.jpg'); /* Add your own texture or image */
+    background-image: url('dark-bg-texture.jpg');
     background-size: cover;
     background-attachment: fixed;
     color: var(--text-primary);
@@ -145,56 +147,56 @@ h2, h3 {
 }
 
 input[type="number"] {
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  width: 60%;
-  border: 2px solid var(--color-primary);
-  border-radius: 6px;
-  background-color: var(--bg-secondary);
-  color: var(--text-primary);
-  margin-bottom: 1rem;
+    padding: 0.75rem;
+    font-size: 1.1rem;
+    width: 60%;
+    border: 2px solid var(--color-primary);
+    border-radius: 6px;
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+    margin-bottom: 1rem;
 }
 
 .btn {
-  display: inline-block;
-  margin-top: 0.5rem;
-  padding: 0.6rem 1.2rem;
-  background-color: var(--color-primary);
-  color: var(--text-primary);
-  font-weight: bold;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background 0.3s ease;
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.6rem 1.2rem;
+    background-color: var(--color-primary);
+    color: var(--text-primary);
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
 }
 
 .btn:hover {
-  background-color: #880015; /* darker red */
+    background-color: #880015;
 }
 
 #message {
-  margin-top: 1rem;
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: var(--color-accent);
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--color-accent);
 }
 
 #history {
-  margin-top: 1rem;
-  list-style: none;
-  padding-left: 0;
+    margin-top: 1rem;
+    list-style: none;
+    padding-left: 0;
 }
 
 #history li {
-  color: var(--text-primary);
-  padding: 0.25rem;
-  border-bottom: 1px solid #333;
+    color: var(--text-primary);
+    padding: 0.25rem;
+    border-bottom: 1px solid #333;
 }
 
 #gif_container img {
-  margin-top: 1rem;
-  max-width: 300px;
-  border-radius: 8px;
+    margin-top: 1rem;
+    max-width: 300px;
+    border-radius: 8px;
 }
 
 footer {
@@ -214,10 +216,35 @@ footer {
     body {
         background: white;
         color: black;
-    }     
+    }
 }
 
-:root {
-    --color-highlight: #4caf50;   
-    --color-muted: #888888;  
+/* Light mode styles */
+body.light-mode {
+    background-color: #f5f5f5;
+    color: #121212;
+    background-image: none;
+}
+
+body.light-mode header,
+body.light-mode footer {
+    background-color: #e0e0e0;
+    color: #121212;
+}
+
+body.light-mode nav {
+    background-color: #ddd;
+}
+
+body.light-mode nav a {
+    color: #b00020;
+}
+
+body.light-mode nav a:hover {
+    color: black;
+}
+
+body.light-mode .theme-toggle {
+    background-color: #333;
+    color: white;
 }
