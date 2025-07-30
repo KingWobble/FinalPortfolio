@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Skills</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <button class="theme-toggle">Toggle Theme</button>
+
+  <header>
+    <h1>My Skills</h1>
+    <p class="tagline">What I bring to the table</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="skills.html">My Skills</a></li>
+      <li><a href="projects.html">My Projects</a></li>
+      <li><a href="about.html">About Me</a></li>
+    </ul>
+  </nav>
+
+  <main class="container">
+    <section id="about">
+      <h2>Technical Skills</h2>
+      <ul>
+        <li>HTML, CSS, and JavaScript</li>
+        <li>Git and GitHub version control</li>
+        <li>Basic Python programming</li>
+        <li>Creating interactive web pages</li>
+      </ul>
+
+      <h2>Soft Skills</h2>
+      <ul>
+        <li>Problem-solving and logical thinking</li>
+        <li>Time management and organization</li>
+        <li>Creative thinking and visual design</li>
+      </ul>
+
+      <h2>Tools I’ve Used</h2>
+      <ul>
+        <li>Visual Studio Code</li>
+        <li>GitHub Desktop and CLI</li>
+        <li>Android Studios</li>
+        <li>IntelliJ</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Julian Bernal. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.querySelector('.theme-toggle').onclick = () => {
+      document.body.classList.toggle('light-mode');
+    };
+  </script>
+
+</body>
+</html>
